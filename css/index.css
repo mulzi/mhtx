@@ -175,78 +175,11 @@ nav .nav li a {
 nav .nav .active {
   background-color: #0527AD;
 }
-.banner {
+.index-banner {
   width: 100%;
-  min-width: 1200px;
-  overflow: hidden;
-}
-.banner .carousel-wrap {
-  position: relative;
-  height: 530px;
-  width: 100%;
-  float: left;
-}
-.banner .carousel-wrap .carousel {
-  z-index: 9;
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 530px;
-}
-.banner .carousel-wrap .carousel li {
-  float: left;
-  width: 100%;
+  margin: 0 auto;
   height: 100%;
-  max-width: 1920px;
-}
-.banner .carousel-wrap .carousel li a {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-.banner .carousel-wrap .carousel li a img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-.banner .carousel-wrap .cut {
-  z-index: 10;
-  position: absolute;
-  width: 40px;
-  height: 80px;
-  text-align: center;
-  line-height: 80px;
-  top: 50%;
-  text-decoration: none;
-  color: #fff;
-  font-family: "宋体";
-  font-size: 40px;
-  background: rgba(0, 0, 0, 0.6);
-  font-weight: 600;
-  cursor: pointer;
-}
-.banner .carousel-wrap .prev {
-  left: 300px;
-}
-.banner .carousel-wrap .next {
-  right: 300px;
-}
-.banner .carousel-wrap .indicators {
-  z-index: 10;
-  position: absolute;
-  right: 10px;
-  bottom: 40px;
-}
-.banner .carousel-wrap .indicators li {
-  float: left;
-  margin-right: 10px;
-  width: 48px;
-  height: 10px;
-  border-radius: 4px;
-  background: #F5CE70;
-}
-.banner .carousel-wrap .indicators .active {
-  background: #333;
+  max-height: 530px;
 }
 .index_body_box {
   width: 100%;
@@ -475,7 +408,7 @@ nav .nav .active {
   margin-left: 20px;
 }
 .index_body_box .index_culture .culture_body .bottom .culture_title .culture_time .right p:nth-child(1) {
-  background: url(../img/icon_time.jpg) no-repeat;
+  background: url(../img/icon_time.jpg) no-repeat -44px 0;
   width: 46px;
   height: 48px;
   float: left;
@@ -787,14 +720,13 @@ nav .nav .active {
 }
 .index_body_box .index_news_list .news_box .news_list_right dl .left_list > p:nth-child(2) {
   border-bottom: 1px solid #ccc;
-  height: 40px;
-  line-height: 20px;
+  height: 48px;
+  line-height: 24px;
   width: 100%;
   color: #777;
   font-size: 12px;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 6px 0;
 }
 .index_body_box .index_news_list .news_box .news_list_right dl .left_list ul {
   width: 100%;
@@ -1192,7 +1124,7 @@ footer .foot .foot_box .right p:nth-child(2) span:nth-child(2) {
 }
 .anlie_body .img_body {
   width: 1150px;
-  margin: 20px auto ;
+  margin: 20px auto;
   overflow: hidden;
 }
 .anlie_body .img_body ul {

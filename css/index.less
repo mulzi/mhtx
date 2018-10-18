@@ -21,7 +21,6 @@ i {
 @f00: #FF0000;
 @05: #0527AD;
 @e6: #e6e6e6;
-
 @cl: {
     clear: both;
     display: block;
@@ -31,16 +30,13 @@ i {
 }
 
 ;
-
 @w1200: {
     width: 1200px;
     margin: 18px auto 0px;
     overflow: hidden;
-
 }
 
 ;
-
 @tov: {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -48,7 +44,6 @@ i {
 }
 
 ;
-
 @img: {
     display: block;
     height: 100%;
@@ -56,7 +51,6 @@ i {
 }
 
 ;
-
 header {
     width: 100%;
     height: 30px;
@@ -64,43 +58,34 @@ header {
     background-color: @e6;
     font-family: "宋体";
     color: @a2;
-
     .head {
         width: 1200px;
         margin: 0 auto;
-
         &::after {
             @cl();
         }
-
         .left {
             width: 70%;
             float: left;
-
             span {
                 display: block;
                 letter-spacing: 0.05em;
                 font-size: 12px;
             }
         }
-
         .right {
             float: left;
             width: 30%;
-
             p {
                 width: 200px;
                 margin: 0 auto;
                 position: relative;
                 height: 30px;
-
                 &:hover span:nth-child(2) {
                     top: 30px;
                 }
-
                 >span {
                     display: block;
-
                     &:nth-child(1) {
                         letter-spacing: 0.3em;
                         text-align: center;
@@ -112,7 +97,6 @@ header {
                         width: 100%;
                         background-color: @e6;
                     }
-
                     &:nth-child(2) {
                         position: absolute;
                         width: 100px;
@@ -122,7 +106,6 @@ header {
                         cursor: pointer;
                         transition: all 0.2s linear;
                         z-index: 2;
-
                         img {
                             @img();
                         }
@@ -138,38 +121,30 @@ header {
     margin: 0 auto;
     overflow: hidden;
     height: 90px;
-
     .head_logo {
         float: left;
         height: 90px;
-
         span {
             width: 250px;
             height: 82px;
-
             img {
                 @img();
             }
         }
     }
-
     .company_img {
         float: left;
         height: 90px;
-
         span {
             height: 82px;
-
             img {
                 @img();
             }
         }
     }
-
     .head_add {
         float: right;
         height: 90px;
-
         span {
             background: url(../img/pagebj.jpg) no-repeat;
             background-size: 100% 100%;
@@ -177,7 +152,6 @@ header {
             width: 220px;
             height: 62px;
             margin-top: 10px;
-
             em {
                 display: block;
                 color: @a2;
@@ -195,15 +169,12 @@ nav {
     background-color: #1771b0;
     height: 45px;
     line-height: 45px;
-
     .nav {
         width: 1200px;
         margin: 0 auto;
-
         &::after {
             @cl();
         }
-
         li {
             float: left;
             width: 1200/8px;
@@ -211,15 +182,12 @@ nav {
             border-right: 1px solid @05;
             height: 45px;
             text-align: center;
-
             &:nth-child(1) {
                 border-left: 1px solid @05;
             }
-
             &:hover {
                 background-color: @05;
             }
-
             a {
                 color: #fff;
                 display: block;
@@ -227,115 +195,32 @@ nav {
                 width: 100%;
             }
         }
-
         .active {
             background-color: @05;
         }
     }
 }
 
-.banner {
+.index-banner{
     width: 100%;
-    min-width: 1200px;
-    overflow: hidden;
-
-    .carousel-wrap {
-        position: relative;
-        height: 530px;
-        width: 100%;
-        float: left;
-
-        .carousel {
-            z-index: 9;
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 530px;
-
-            li {
-                float: left;
-                width: 100%;
-                height: 100%;
-                max-width: 1920px;
-
-                a {
-                    width: 100%;
-                    height: 100%;
-                    display: block;
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        display: block;
-                    }
-                }
-            }
-        }
-
-        .cut {
-            z-index: 10;
-            position: absolute;
-            width: 40px;
-            height: 80px;
-            text-align: center;
-            line-height: 80px;
-            top: 50%;
-            text-decoration: none;
-            color: #fff;
-            font-family: "宋体";
-            font-size: 40px;
-            background: rgba(0, 0, 0, 0.6);
-            font-weight: 600;
-            cursor: pointer;
-        }
-
-        .prev {
-            left: 300px;
-        }
-
-        .next {
-            right: 300px;
-        }
-
-        .indicators {
-            z-index: 10;
-            position: absolute;
-            right: 10px;
-            bottom: 40px;
-
-            li {
-                float: left;
-                margin-right: 10px;
-                width: 48px;
-                height: 10px;
-                border-radius: 4px;
-                background: #F5CE70;
-            }
-
-            .active {
-                background: #333;
-            }
-        }
-    }
-
+    margin: 0 auto;
+    height: 100%;
+    max-height: 530px;
 }
 
 .index_body_box {
     width: 100%;
     background-color: @e6;
     overflow: hidden;
-
     .index_case {
         @w1200();
         background-color: #fff;
-
         .top_tit {
             width: 1150px;
             margin: 0 auto;
             height: 48px;
             background: url(../img/anli_top.jpg) no-repeat left bottom;
             border-bottom: @f00 1px solid;
-
             a {
                 display: block;
                 float: right;
@@ -345,88 +230,71 @@ nav {
                 margin-top: 20px;
             }
         }
-
         .case_list {
             width: 1150px;
             margin: 0 auto;
             box-sizing: border-box;
             border: 1px solid @e6;
             margin-top: 10px;
-
             &::after {
                 @cl();
             }
-
             .list_img {
                 width: 50px;
                 height: 44px;
                 float: left;
                 margin: 20px auto;
-
                 img {
                     @img();
                 }
             }
-
             .right_list {
                 width: 1000px;
                 float: left;
                 margin: 30px auto;
                 margin-left: 40px;
-
                 li {
                     float: left;
                     padding: 2px 8px;
                     margin-right: 20px;
                     border-radius: 4px;
-
                     &:hover {
                         background-color: @05;
-
                         a {
                             color: #fff;
                         }
                     }
-
                     a {
                         color: #666;
                         font-size: 16px;
                     }
                 }
-
                 .active {
                     background-color: @05;
-
                     a {
                         color: #fff;
                     }
                 }
             }
         }
-
         .case_img_list {
             width: 1160px;
             margin: 10px auto;
-
             &::after {
                 @cl();
             }
-
             li {
                 float: left;
                 margin: 5px;
                 width: 1120/4px;
                 height: 195px;
                 box-sizing: border-box;
-
                 a {
                     @img();
                     overflow: hidden;
-
                     img {
                         @img();
                         transition: all 0.2s linear;
-
                         &:hover {
                             transform: scale(1.05);
                             transition: all 0.4s linear;
@@ -436,18 +304,15 @@ nav {
             }
         }
     }
-
     .index_culture {
         @w1200();
         background-color: #fff;
-
         .top_tit {
             width: 1150px;
             margin: 0 auto;
             height: 48px;
             background: url(../img/enterprise_top.jpg) no-repeat left bottom;
             border-bottom: @f00 1px solid;
-
             a {
                 display: block;
                 float: right;
@@ -457,13 +322,11 @@ nav {
                 margin-top: 20px;
             }
         }
-
         .culture_body {
             width: 1150px;
             margin: 6px auto 20px;
             border: @e6 1px solid;
             box-sizing: border-box;
-
             >p {
                 color: #666;
                 font-size: 16px;
@@ -473,38 +336,31 @@ nav {
                 height: 24px;
                 text-indent: 30px;
                 line-height: 26px;
-
                 span {
                     font-size: 12px;
                     color: @a2;
                 }
             }
-
             .bottom {
                 overflow: hidden;
                 width: 1150px;
                 margin: 0 auto;
-
                 .left_img {
                     float: left;
                     width: 370px;
                     height: 212px;
                     margin-left: 10px;
-
                     span {
                         @img();
-
                         img {
                             @img();
                         }
                     }
                 }
-
                 .culture_title {
                     width: 750px;
                     margin-left: 20px;
                     float: left;
-
                     >p {
                         width: 96%;
                         margin: 0 auto;
@@ -516,15 +372,12 @@ nav {
                         margin-top: 10px;
                         text-indent: 2em;
                     }
-
                     .culture_time {
                         width: 96%;
                         margin: 18px auto;
                         overflow: hidden;
-
                         .left {
                             float: left;
-
                             p {
                                 &:nth-child(1) {
                                     background: url(../img/icon_time.jpg) no-repeat;
@@ -532,19 +385,15 @@ nav {
                                     height: 48px;
                                     float: left;
                                 }
-
                                 &:nth-child(2) {
                                     float: left;
                                     margin-left: 4px;
-
                                     span {
                                         display: block;
-
                                         &:nth-child(1) {
                                             color: #666;
                                             font-size: 14px;
                                         }
-
                                         &:nth-child(2) {
                                             color: @f00;
                                             font-size: 14px;
@@ -555,31 +404,25 @@ nav {
                                 }
                             }
                         }
-
                         .right {
                             float: left;
                             margin-left: 20px;
-
                             p {
                                 &:nth-child(1) {
-                                    background: url(../img/icon_time.jpg) no-repeat;
+                                    background: url(../img/icon_time.jpg) no-repeat -44px 0;
                                     width: 46px;
                                     height: 48px;
                                     float: left;
                                 }
-
                                 &:nth-child(2) {
                                     float: left;
                                     margin-left: 4px;
-
                                     span {
                                         display: block;
-
                                         &:nth-child(1) {
                                             color: #666;
                                             font-size: 14px;
                                         }
-
                                         &:nth-child(2) {
                                             color: @f00;
                                             font-size: 14px;
@@ -595,18 +438,15 @@ nav {
             }
         }
     }
-
     .index_team {
         @w1200();
         background-color: #fff;
-
         .top_tit {
             width: 1150px;
             margin: 0 auto;
             height: 48px;
             background: url(../img/designer_top.jpg) no-repeat left bottom;
             border-bottom: @f00 1px solid;
-
             a {
                 display: block;
                 float: right;
@@ -616,22 +456,18 @@ nav {
                 margin-top: 20px;
             }
         }
-
         .bottom_box {
             width: 1150px;
             margin: 20px auto;
-
             &::after {
                 @cl();
             }
-
             .left_box {
                 width: 800px;
                 float: left;
                 position: relative;
                 margin-left: 50px;
                 height: 296px;
-
                 span {
                     display: block;
                     width: 40px;
@@ -639,32 +475,26 @@ nav {
                     position: absolute;
                     top: 128px;
                     cursor: pointer;
-
                     img {
                         @img();
                     }
                 }
-
                 .pre_c {
                     left: -40px;
                 }
-
                 .right_c {
                     right: -40px;
                 }
-
                 .img_team_ov {
                     width: 800px;
                     height: 296px;
                     overflow: hidden;
                     position: relative;
-
                     ul {
                         width: 2000px;
                         position: absolute;
                         top: 0;
                         left: 0;
-
                         li {
                             float: left;
                             width: 800/4-8px;
@@ -672,49 +502,40 @@ nav {
                             box-shadow: 0px 0px 5px #a2a2a2 inset;
                             height: 296px;
                             background-color: #f5f5f5;
-
                             &:hover {
                                 box-shadow: 0px 0px 8px #808080 inset;
                             }
-
                             &:hover a p:nth-child(2) {
                                 color: red;
                             }
-
                             &:hover a p {
                                 color: red;
                             }
-
                             a {
                                 display: block;
                                 width: 100%;
                                 height: 100%;
-
                                 p {
                                     width: 90%;
                                     margin: 0 auto;
                                     margin-bottom: 4px;
                                     font-size: 14px;
                                     color: #666666;
-
                                     &:nth-child(1) {
                                         margin-top: 8px;
                                         height: 200px;
                                         margin-bottom: 14px;
                                         border: 4px solid #e6e6e6;
                                         box-sizing: border-box;
-
                                         img {
                                             @img();
                                         }
                                     }
-
                                     &:nth-child(2) {
                                         font-weight: bold;
                                         width: 86%;
                                         color: #444;
                                     }
-
                                     &:nth-child(3) {
                                         width: 86%;
                                     }
@@ -724,7 +545,6 @@ nav {
                     }
                 }
             }
-
             .right_box {
                 float: left;
                 width: 230px;
@@ -733,7 +553,6 @@ nav {
                 border: #f1f1f1 solid 1px;
                 border-top: 2px solid red;
                 box-sizing: border-box;
-
                 .top_form {
                     font-size: 18px;
                     color: red;
@@ -743,20 +562,16 @@ nav {
                     height: 44px;
                     background-color: #fff;
                 }
-
                 .index_contact_form {
                     width: 100%;
                     margin-top: 10px;
-
                     form {
                         p {
                             width: 90%;
                             margin: 12px auto;
-
                             &::after {
                                 @cl();
                             }
-
                             span {
                                 display: block;
                                 width: 20%;
@@ -765,7 +580,6 @@ nav {
                                 height: 24px;
                                 line-height: 24px;
                             }
-
                             >input {
                                 display: block;
                                 float: left;
@@ -778,11 +592,9 @@ nav {
                                 text-indent: 0.4em;
                             }
                         }
-
                         >em {
                             margin-top: 20px;
                             display: block;
-
                             >input {
                                 width: 80%;
                                 margin: 0 auto;
@@ -798,7 +610,6 @@ nav {
                             }
                         }
                     }
-
                     .contact_number {
                         margin: 20px auto 50px;
                         text-align: center;
@@ -806,7 +617,6 @@ nav {
                         height: 20px;
                         color: #333;
                         font-size: 12px;
-
                         span {
                             color: red;
                         }
@@ -815,18 +625,15 @@ nav {
             }
         }
     }
-
     .index_news_list {
         @w1200();
         background-color: #fff;
-
         .top_tit {
             width: 1150px;
             margin: 0 auto;
             height: 48px;
             background: url(../img/news_top.jpg) no-repeat left bottom;
             border-bottom: @f00 1px solid;
-
             a {
                 display: block;
                 float: right;
@@ -836,21 +643,16 @@ nav {
                 margin-top: 20px;
             }
         }
-
         .news_box {
             width: 1150px;
             margin: 20px auto;
             overflow: hidden;
-
             .news_menu {
                 width: 160px;
                 float: left;
-
                 ul {
                     width: 100%;
-
                     li {
-
                         height: 60px;
                         line-height: 60px;
                         box-sizing: border-box;
@@ -859,7 +661,6 @@ nav {
                         color: #333;
                         font-size: 14px;
                         cursor: pointer;
-
                         &::after {
                             content: ">";
                             display: inline-block;
@@ -867,44 +668,35 @@ nav {
                             vertical-align: middle;
                             margin-left: 20px;
                         }
-
                         span {
                             vertical-align: middle;
                         }
-
                         &.action {
                             border-left: 2px solid @f00;
                         }
-
                         &:hover {
                             color: @f00;
                         }
                     }
-
                 }
             }
-
             .news_list_right {
                 float: left;
                 width: 960px;
                 margin-left: 30px;
-
                 dl {
                     width: 100%;
                     overflow: hidden;
                     display: none;
-
                     .left_list {
                         float: left;
                         width: 500px;
-
                         >p {
                             &:nth-child(1) {
                                 border-bottom: 1px dashed #ccc;
                                 height: 40px;
                                 line-height: 40px;
                                 width: 100%;
-
                                 a {
                                     display: block;
                                     color: #333;
@@ -915,72 +707,58 @@ nav {
                                     font-size: 14px;
                                 }
                             }
-
                             &:nth-child(2) {
                                 border-bottom: 1px solid #ccc;
-                                height: 40px;
-                                line-height: 20px;
+                                height: 48px;
+                                line-height: 24px;
                                 width: 100%;
                                 color: #777;
                                 font-size: 12px;
                                 overflow: hidden;
                                 text-overflow: ellipsis;
-                                padding: 6px 0;
+                              
                             }
                         }
-
                         ul {
                             width: 100%;
                             margin-top: 20px;
-
                             li {
                                 width: 100%;
                                 margin-bottom: 8px;
-
                                 a {
                                     width: 100%;
                                     display: block;
                                     overflow: hidden;
                                     color: #666;
-
                                     &:hover {
                                         color: @f00;
                                     }
-
                                     span {
                                         display: block;
                                         height: 24px;
                                         line-height: 24px;
-
                                         font-size: 12px;
                                         float: left;
-
                                         &:nth-child(1) {
                                             width: 80%;
                                             @tov();
                                         }
-
                                         &:nth-child(2) {
                                             width: 20%;
                                             text-align: center;
-
                                         }
-
                                     }
                                 }
                             }
                         }
                     }
-
                     .right_img_list {
                         width: 430px;
                         height: 300px;
                         float: left;
                         margin-left: 30px;
-
                         span {
                             @img();
-
                             img {
                                 @img();
                             }
@@ -990,18 +768,15 @@ nav {
             }
         }
     }
-
     .index_service_box {
         @w1200();
         background-color: #fff;
-
         .top_tit {
             width: 1150px;
             margin: 0 auto;
             height: 48px;
             background: url(../img/jiaju_top.jpg) no-repeat left bottom;
             border-bottom: @f00 1px solid;
-
             a {
                 display: block;
                 float: right;
@@ -1011,15 +786,12 @@ nav {
                 margin-top: 20px;
             }
         }
-
         .bottom_box {
             width: 1150px;
             margin: 20px auto;
-
             ul {
                 width: 100%;
                 overflow: hidden;
-
                 li {
                     width: 1150/5-10px;
                     margin: 5px;
@@ -1027,36 +799,28 @@ nav {
                     float: left;
                     height: 80px;
                     overflow: hidden;
-
                     &:hover span:nth-child(1) {
-
                         top: -80px;
                         transition: all .4s ease-out;
                     }
-
                     &:hover span:nth-child(2) {
-
                         top: 0;
                         transition: all .4s ease-out;
                     }
-
                     span {
                         display: block;
                         height: 80px;
                         position: absolute;
                         width: 100%;
-
                         &:nth-child(1) {
                             width: 100%;
                             top: 0;
                             left: 0;
                             transition: all .4s ease-out;
-
                             img {
                                 @img();
                             }
                         }
-
                         &:nth-child(2) {
                             background-color: #999;
                             line-height: 80px;
@@ -1068,47 +832,36 @@ nav {
                             transition: all .4s ease-out;
                         }
                     }
-
                 }
             }
         }
     }
-
     .index_link {
         @w1200();
         background-color: #fff;
         margin-bottom: 20px;
-
         .link_box {
             width: 1150px;
             margin: 20px auto;
             overflow: hidden;
-
             .left {
                 float: left;
                 width: 80px;
-
                 span {
                     width: 100%;
                     color: #333;
                     font-size: 14px;
-
                 }
             }
-
             .right {
                 float: left;
                 width: 1050px;
-
                 li {
                     display: inline-block;
                     margin: 0 14px 10px 0;
-
                     a {
-
                         color: #666;
                         font-size: 13px;
-
                         &:hover {
                             color: @f00;
                         }
@@ -1117,77 +870,60 @@ nav {
             }
         }
     }
-
 }
 
 footer {
     width: 100%;
     background-color: #1771b0;
     overflow: hidden;
-
     .foot {
         @w1200();
-
         .foot_box {
             width: 1150px;
             margin: 40px auto;
             color: #fff;
             overflow: hidden;
-
             .left {
                 width: 60%;
                 float: left;
-
                 p {
                     margin-bottom: 6px;
                     font-size: 13px;
-
                     a {
                         color: #fff;
-
                         &:hover {
                             color: @f00;
                         }
                     }
                 }
             }
-
             .right {
                 width: 36%;
                 float: left;
                 margin-left: 4%;
-
                 p {
                     float: left;
-
                     &:nth-child(1) {
                         float: left;
                         width: 120px;
                         height: 120px;
-
                         img {
                             @img();
                         }
                     }
-
                     &:nth-child(2) {
                         float: left;
                         width: 220px;
                         margin-left: 20px;
-
                         span {
                             display: block;
                             color: #fff;
                             font-size: 12px;
-
                             &:nth-child(1) {
                                 margin-top: 40px;
-
                             }
-
                             &:nth-child(2) {
                                 margin-top: 10px;
-
                             }
                         }
                     }
@@ -1198,63 +934,51 @@ footer {
 }
 
 /* 关于我们公用  */
+
 .about_box {
     width: 100%;
     background-color: @e6;
     overflow: hidden;
-
     .about_body {
         width: 1200px;
         margin: 20px auto;
-
         .top_tit {
             color: #333;
             font-size: 12px;
             line-height: 20px;
-
             p {
                 font-size: 12px;
                 line-height: 20px;
-
                 em {
                     display: inline-block;
                     width: 18px;
                     height: 18px;
                     vertical-align: middle;
                     margin-right: 6px;
-
                     img {
                         @img();
                     }
                 }
-
                 a {
                     display: inline-block;
                     color: #333;
                     vertical-align: middle;
-
                 }
-
                 span {
                     vertical-align: middle;
                 }
             }
-
         }
-
         .bottom_body {
             width: 1200px;
             margin: 20px auto;
             overflow: hidden;
-
             &::after {
                 @cl();
             }
-
             .left_menu {
                 width: 260px;
                 float: left;
-
                 >span {
                     height: 44px;
                     line-height: 44px;
@@ -1265,13 +989,11 @@ footer {
                     font-size: 18px;
                     display: block;
                 }
-
                 ul {
                     width: 100%;
                     background-color: #fff;
                     overflow: hidden;
                     padding: 10px 0;
-
                     li {
                         width: 80%;
                         height: 32px;
@@ -1282,33 +1004,26 @@ footer {
                         font-size: 14px;
                         text-align: center;
                         cursor: pointer;
-
                         &:hover {
                             border-right: 3px solid red;
                         }
-
                         &:hover a {
                             color: red;
                         }
-
                         a {
                             color: #333;
                         }
-
                     }
                 }
             }
-
             .right_coment {
                 width: 920px;
                 float: left;
                 margin-left: 20px;
                 background-color: #fff;
-
                 &::after {
                     @cl();
                 }
-
                 .top_tit {
                     width: 94%;
                     margin: 0 auto;
@@ -1318,12 +1033,10 @@ footer {
                     color: #B9B9B9;
                     font-size: 20px;
                 }
-
                 .bottom_com {
                     margin: 0 auto;
                     margin-top: 10px;
                     width: 94%;
-
                     p {
                         width: 100%;
                         margin-bottom: 16px;
@@ -1331,7 +1044,6 @@ footer {
                         color: #333;
                         font-size: 16px;
                         text-indent: 2em;
-
                         img {
                             max-width: 70%;
                             display: block;
@@ -1339,14 +1051,12 @@ footer {
                         }
                     }
                 }
-                .add_liet_us{
+                .add_liet_us {
                     width: 94%;
                     margin: 40px auto;
                     height: 400px;
                 }
-
             }
-
         }
     }
 }
@@ -1354,83 +1064,67 @@ footer {
 /* 关于我们公用  */
 
 /* 案列分析 */
+
 .anlie_body {
     width: 1200px;
     background-color: #fff;
     margin: 20px auto;
     overflow: hidden;
-
     .top {
         width: 1150px;
         margin: 10px auto;
-
         ul {
             border-bottom: 1px dashed #999;
             padding: 10px 0;
-
             li {
                 display: inline-block;
-
                 margin: 0 10px;
                 font-size: 14px;
                 color: #333;
-
                 a {
                     color: #333;
                     display: block;
                     padding: 4px 10px;
                     border-radius: 4px;
-
                     &.active {
                         background-color: #1771b0;
                         color: #fff;
                     }
-
                     &:hover {
                         background-color: #1771b0;
                         color: #fff;
                     }
-
                 }
             }
         }
     }
-
     .img_body {
         width: 1150px;
-        margin: 20px auto ;
+        margin: 20px auto;
         overflow: hidden;
-
         ul {
             width: 100%;
-
             li {
                 width: 1150/4-10px;
                 margin: 10px 5px;
                 float: left;
-
                 &:hover {
                     box-shadow: 0px 0px 6px #919191 inset;
                 }
-
                 a {
                     display: block;
                     width: 100%;
                     border: 1px solid #ebebeb;
                     box-sizing: border-box;
-
                     span {
                         display: block;
                         width: 100%;
-
                         &:nth-child(1) {
                             height: 190px;
-
                             img {
                                 @img();
                             }
                         }
-
                         &:nth-child(2) {
                             height: 36px;
                             line-height: 36px;
@@ -1442,13 +1136,13 @@ footer {
             }
         }
     }
-    >.anlie_active{
-        width:96%;
+    >.anlie_active {
+        width: 96%;
         margin: 30px auto;
         overflow: hidden;
-        .tit_top{
+        .tit_top {
             border-bottom: dashed 1px #999;
-            span{
+            span {
                 display: block;
                 text-align: center;
                 line-height: 28px;
@@ -1458,11 +1152,11 @@ footer {
                 margin-bottom: 16px;
             }
         }
-        >.bottom_body_img{
+        >.bottom_body_img {
             margin: 20px auto;
-            p{
+            p {
                 margin-bottom: 16px;
-                img{
+                img {
                     max-width: 80%;
                     display: block;
                     margin: 0 auto;
@@ -1470,13 +1164,13 @@ footer {
             }
         }
     }
-    .line_com{
+    .line_com {
         width: 96%;
         margin: 0 auto;
-        p{
+        p {
             border-bottom: 1px solid #999;
             line-height: 24px;
-            em{
+            em {
                 margin-left: 10px;
                 border-bottom: 2px solid #8F0606;
                 padding: 4px;
@@ -1485,7 +1179,7 @@ footer {
                 vertical-align: middle;
                 display: inline-block;
             }
-            span{
+            span {
                 color: #D1D1D1;
                 font-size: 14px;
                 vertical-align: middle;
@@ -1493,11 +1187,12 @@ footer {
             }
         }
     }
-
 }
 
 /* 案列分析 */
+
 /* 翻页列表 */
+
 .c_list {
     overflow: hidden;
     margin-top: 10px;
@@ -1540,33 +1235,28 @@ footer {
 /* 翻页列表 */
 
 /* 设计团队 */
+
 .team_body {
     width: 1200px;
     background-color: #fff;
     margin: 20px auto;
     overflow: hidden;
-
     .team_list {
         width: 1150px;
         margin: 0 auto;
-
         ul {
             width: 100%;
             overflow: hidden;
-
             li {
                 width: 1150/4-20px;
                 float: left;
                 margin: 18px 10px;
-
                 &:hover {
                     box-shadow: 0px 0px 6px #999 inset;
                 }
-
                 a {
                     width: 100%;
                     display: block;
-
                     p {
                         &:nth-child(1) {
                             margin: 6px auto;
@@ -1574,15 +1264,12 @@ footer {
                             height: 320px;
                             box-sizing: border-box;
                             border: 3px solid #E2E2E2;
-
                             img {
                                 @img();
                             }
                         }
-
                         &:nth-child(2) {
                             overflow: hidden;
-
                             span {
                                 display: inline-block;
                                 min-width: 40%;
@@ -1598,58 +1285,47 @@ footer {
             }
         }
     }
-
 }
 
 /* 设计团队 */
 
 /* 新闻中心 */
+
 .news_list {
     width: 94%;
     margin: 0 auto;
     overflow: hidden;
     margin-top: 16px;
-
     ul {
         width: 100%;
-
         li {
             width: 100%;
             border-bottom: 1px dashed #E4E4E4;
             padding: 10px 0;
             margin: 10px auto;
-
             &:hover {
                 box-shadow: 0px 0px 8px #DCDCDC inset;
                 border-bottom: 1px dashed transparent;
             }
-
             a {
                 display: block;
-
                 &:hover .right p:nth-child(1) {
                     color: red;
                 }
-
                 &::after {
                     @cl();
                 }
-
                 .left {
                     width: 15%;
                     float: left;
-
                     p {
                         &:nth-child(1) {
-
                             width: 100%;
                             height: 90px;
-
                             img {
                                 @img();
                             }
                         }
-
                         &:nth-child(2) {
                             color: #999;
                             border-top: 1px dashed #F5F5F5;
@@ -1661,21 +1337,17 @@ footer {
                         }
                     }
                 }
-
                 .right {
                     width: 81%;
                     margin-left: 2%;
                     float: left;
-
                     p {
-
                         &:nth-child(1) {
                             color: #111111;
                             width: 100%;
                             @tov();
                             height: 20px;
                         }
-
                         &:nth-child(2) {
                             color: #AFAFAF;
                             width: 100%;
@@ -1684,8 +1356,6 @@ footer {
                             overflow: hidden;
                             margin-top: 20px;
                             font-size: 14px;
-
-
                         }
                     }
                 }
@@ -1699,11 +1369,9 @@ footer {
     float: left;
     margin-left: 20px;
     background-color: #fff;
-
     .top_tit {
         width: 94%;
         margin: 20px auto 0;
-
         >span {
             display: block;
             width: 100%;
@@ -1714,14 +1382,12 @@ footer {
             text-align: center;
             @tov();
         }
-
         >p {
             width: 100%;
             line-height: 24px;
             margin-top: 22px;
             border-bottom: 1px solid #999;
             padding: 10px 0;
-
             >span {
                 min-width: 48%;
                 display: inline-block;
@@ -1731,18 +1397,15 @@ footer {
             }
         }
     }
-
     .active_body {
         width: 94%;
         margin: 20px auto 0;
-
         p {
             line-height: 26px;
             margin-bottom: 14px;
             color: #333;
             font-size: 14px;
             text-indent: 2em;
-
             img {
                 max-width: 76%;
                 display: block;
@@ -1750,16 +1413,13 @@ footer {
             }
         }
     }
-
     .active_next {
         width: 94%;
         margin: 20px auto;
-
         p {
             overflow: hidden;
             border-top: 1px solid #999;
             padding: 10px 0;
-
             span {
                 display: block;
                 float: left;
@@ -1767,65 +1427,52 @@ footer {
                 color: #333;
                 font-size: 12px;
                 line-height: 18px;
-
                 &:nth-child(2) {
                     text-align: right;
                 }
-
                 a {
                     color: #969696;
                     display: inline-block;
                     max-width: 80%;
                     @tov();
                     vertical-align: middle;
-
                     &:hover {
                         color: red;
                     }
                 }
-
                 em {
                     vertical-align: middle;
                 }
             }
         }
     }
-
     .news_com {
         width: 94%;
         margin: 30px auto;
-
         >p {
             color: #999;
             font-size: 22px;
-
         }
-
         ul {
             overflow: hidden;
             width: 100%;
             margin-top: 10px;
-
             li {
                 width: 48%;
                 float: left;
                 border-bottom: dashed 1px #999;
                 padding: 10px 0;
-
                 &:nth-child(odd) {
                     margin-right: 4%;
                 }
-
                 a {
                     color: #999;
                     font-size: 14px;
                     display: block;
                     line-height: 22px;
-
                     &:hover {
                         color: red;
                     }
-
                     &::before {
                         width: 4px;
                         height: 4px;
@@ -1837,9 +1484,7 @@ footer {
                         margin-left: 10px;
                         float: left;
                         margin-top: 10px;
-
                     }
-
                     span {
                         width: 90%;
                         margin-left: 6px;
@@ -1860,73 +1505,66 @@ footer {
 /* 新闻中心 */
 
 /*  */
+
 .right_intro {
     width: 920px;
     float: left;
     margin-left: 20px;
     background-color: #fff;
-
     &::after {
         @cl();
     }
-
     .top_tit {
         width: 94%;
         margin: 30px auto;
-
         &::after {
             @cl();
         }
-
         .left_img {
             float: left;
             width: 240px;
             height: 300px;
-
             span {
                 height: 100%;
                 width: 100%;
                 display: block;
-
                 img {
                     @img();
                 }
             }
         }
-
         .right_name {
             float: left;
             margin-left: 30px;
             width: 300px;
-            span{
+            span {
                 display: block;
                 color: #333;
-                &:nth-child(1){
+                &:nth-child(1) {
                     margin-top: 40px;
                     font-size: 28px;
                     font-family: '宋体';
                     font-weight: bold;
                 }
-                &:nth-child(2){
+                &:nth-child(2) {
                     margin-top: 20px;
                     font-size: 16px;
                     font-family: '宋体';
                     font-weight: bold;
                     color: #666;
                 }
-
             }
         }
     }
-    .intro_body{
+    .intro_body {
         margin: 20px auto;
         width: 94%;
         overflow: hidden;
-        p{
+        p {
             line-height: 24px;
             color: #333;
             font-size: 14px;
-            margin-bottom:12px;
+            margin-bottom: 12px;
         }
     }
 }
